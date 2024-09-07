@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <h1>This is DJANGO Form</h1>
+
+    <h3>Simple form</h3>
+    <form action="">
+      <table>
+        {{form}}
+      </table>
+      <input type="button" value="submit" />
+    </form>
+    <hr />
+    <h3>form in the table form</h3>
+    {{form.as_table}}
+    <input type="button" value="submit" />
+
+    <hr />
+    <h3>form in the paragraph form</h3>
+    {{form.as_p}}
+    <input type="button" value="submit" />
+
+    <hr />
+    <h3>form in the ul form</h3>
+    {{form.as_ul}}
+    <input type="button" value="submit" />
+
+    <hr />
+    <h3>form in the by name form</h3>
+    {{form.name}}
+    <input type="button" value="submit" />
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello Django Form Arguments</h1>
+    {{form.as_p}}
+    <button>submit</button>
+    <hr />
+    {% for fm in form %} {{fm.label}} <br />
+    {% endfor %}
+    <br />
+    {% for fm in form %} {{fm.label_tag}} <br />
+    {% endfor %}
+    <br />
+    {% for fm in form %} {{fm.name }} <br />
+    {% endfor %}
+    <br />
+    {% for fm in form %} {{fm.value }} <br />
+    {% endfor %}
+    <br />
+    {% for fm in form %} {{fm.class }} <br />
+    {% endfor %}
+  </body>
+</html>
